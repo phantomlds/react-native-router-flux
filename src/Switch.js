@@ -39,12 +39,12 @@ export default function Switch(props) {
     if (props.unmountScenes) {
       setTimeout(() => {
         Actions[selectedKey]({ unmountScenes: true });
-      }, 0);
+      }, 300);
       navigationState = { ...navState, children: [navState.children[navState.index]], index: 0 };
     } else {
       setTimeout(() => {
         Actions[selectedKey]();
-      }, 0);
+      }, 300);
     }
   }
 
